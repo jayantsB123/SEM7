@@ -29,7 +29,7 @@ int partition(vector<int>& arr, int low, int high) {
 void quickSort(vector<int>& arr, int low, int high) {
 
 	if (low < high) {
-		int pi = partition1(arr, low, high);
+		int pi = partition(arr, low, high);
 
 		quickSort(arr, low, pi - 1);
 		quickSort(arr, pi + 1, high);
